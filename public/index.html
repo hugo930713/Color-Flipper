@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Flipper</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="h-screen overflow-y-hidden bg-slate-50">
+    <nav class="grid h-12 bg-white shadow-xl">
+        <div class="flex items-center justify-between w-10/12 mx-auto tracking-widest lg:w-7/12 xl:w-4/12">
+            <h4 class="text-sm font-bold tracking-widest text-blue-400 lg:text-base xl:text-lg">Color Flipper</h4>
+            <ul class="flex items-end mr-2 font-bold tracking-widest">
+                <li class="mr-6 transition duration-100 ease-linear hover:text-blue-400 text-zinc-700">
+                    <a href="index.html">Simple</a>
+                </li>
+                <li class="transition duration-100 ease-linear hover:text-blue-400 text-zinc-700">
+                    <a href="hex.html">Hex</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="flex flex-col items-center justify-center h-screen mx-auto">
+        <div class="flex flex-col justify-center py-3 text-3xl font-bold tracking-widest text-center text-white bg-gray-800 rounded-lg w-96 md:w-8/12 md:max-w-7xl md:flex-row md:py-5 lg:text-4xl xl:w-5/12">
+            <h2 class="mb-2 md:mb-0">Background Color：</h2>
+                <span id="color" class="text-blue-400">#F1f5f8</span>
+            </h2>
+        </div>
+        <button id="btn" class="flex mx-auto mt-10 transition duration-200 ease-linear border-2 border-gray-800 rounded-lg hover:text-white hover:bg-gray-800"><p class="w-32 py-2 mx-auto font-bold tracking-widest">CLICK ME</p></button>
+    </main>
+</body>
+<script src="js/app.js"></script>
+</html>
